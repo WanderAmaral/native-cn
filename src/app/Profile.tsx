@@ -2,6 +2,7 @@ import { Image, View } from "react-native";
 
 import { Skills } from "@/components/Skills";
 import User from "@/components/User";
+import Preferences from "@/components/Preferences";
 
 export default function Profile() {
   return (
@@ -13,6 +14,7 @@ export default function Profile() {
       <View className="flex-1 px-4 pb-4">
         <User />
         <Skills />
+        <Preferences />
       </View>
     </View>
   );
