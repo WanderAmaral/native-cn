@@ -13,7 +13,7 @@ interface IconProps {
 
 function Option({ children }: OptionsProps) {
   return (
-    <View className="w-full flex-row items-center gap-2 border-b border-gray-500">
+    <View className="w-full flex-row items-center gap-2 border-b border-gray-500 py-3">
       {children}
     </View>
   );
@@ -24,7 +24,7 @@ function Icon({ icon }: IconProps) {
 }
 
 function Title({ ...props }: TextProps) {
-  return <Text className="text-white text-lg flex-1" {...props}></Text>;
+  return <Text className="text-white text-lg flex-1" {...props} />
 }
 
 Option.Title = Title;
